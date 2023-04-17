@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: auto !important;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+    background-color: #000000;
+    font-size: 16px;
+}
+
+header {
+    background-image: url(../img/marvel-1024x580-multiverso.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+
+.color-textHeader {
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(212, 255, 0, 0.5);
+}
+
+/* Divicion */
+.divicion-arriba {
+    background-color: #677381;
+    height: 2px;
+    margin-top: 100px;
+    margin-bottom: 2px;
+}
+
+.divicion-media {
+    background-color: #F9F871;
+    height: 2px;
+}
+
+.divicion-abajo {
+    background-color: #677381;
+    height: 2px;
+    margin-top: 2px;
+}
+
+/* linea de navegacion */
+#linea-navegacion {
+    position: fixed;
+    bottom: 0;
+    height: 2px;
+    background-color: #D6A319;
+    transition: width 0.3s ease-in-out;
+    width: 0;
+}
+
+/* NavBar */
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    /* se establece que el navegador este en la parte superior de la pagina */
+    width: 100%;
+    /* para que el navegador ocupe toda la pagina */
+    z-index: 999;
+    /* se asegura que el elemento este por sobre todo */
+    border-bottom: 1px solid #F9F871;
+    /* se establece un borde para el navbar */
+}
+
+.navbar-toggler{
+    background-color: #2b2a2a;
+    color: #D6A319;
+    border: 2px solid #F9F871;
+}
+
+
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+/* Color del navbar */
+.mi-color {
+    background-color: #131313;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-nav,
+.nav-link,
+.navbar-brand {
+    color: #FBB0D9;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Titulos */
+
+.text-titulo{
+    margin-bottom: 50px;
+}
+
+/* Acerca de mi */
+
+#intereses, #fotos, #anecdota {
+    padding-top: 100px;
+}
+
+/* transparencia de la cards */
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+/* color del texto */
+.resaltar-texto {
+    color: #FBB0D9;
+    text-shadow: 1px 1px 3px rgba(221, 228, 26, 0.5);
+}
+
+/* alineacion del texto */
+.card-text,
+.alinear-acerca-de-mi {
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(221, 228, 26, 0.5);
+}
+
+.fa-clapperboard,
+.fa-earth-americas,
+.fa-shuttle-space,
+.fa-book-skull {
+    color: #FBB0D9;
+    text-shadow: 1px 1px 3px rgba(221, 228, 26, 0.5);
+}
+
+/* seccion mis pasatiempos */
+.card-group .card {
+    width: calc(25% - 1rem);
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+    .card-group .card {
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card-group .card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* carouse */
+
+.carousel-inner, .item-imagen, img{
+    object-fit: scale-down;
+    height: 100vh;
+    width: 100%;
+}
+
+  /* Fin carousel */
+
+/* llamada a la accion */
+.llamada-accion {
+    background-color: #000000;
+    text-shadow: 1px 1px 3px rgba(221, 228, 26, 0.5);
+  }
+  
+  .llamada-accion h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .llamada-accion p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .llamada-accion a {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .btn-ing{
+    border-radius: 6px;
+    overflow: hidden;
+    color: #D6A319;
+    background-color: transparent;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.btn-ing:hover{
+    box-shadow: 5px 5px 20px rgba(164, 157, 9, 0.4);
+    transform: translateY(-3%);
+}
+
+
+
+
+
+/* footer */
+/* .footer {
+    background-color: #004F70;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: #D6A319;
+} */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .text-footer {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nosotros-footer{
+    text-align: justify;
+  }
+  
+  @media (min-width: 768px) {
+    .text-footer {
+      text-align: left;
+    }
+  }
+  
